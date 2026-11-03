@@ -43,7 +43,7 @@ a {
 }
 
 .header {
-  background: rgba(255,255,255,.96);
+  background: #FFFFFF;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
