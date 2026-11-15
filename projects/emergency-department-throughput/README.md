@@ -81,6 +81,6 @@ The analysis focuses on operational indicators including:
 
 This project uses simulated data for educational and portfolio purposes.
 
-Cedarbridge General Hospital is a fictional organisation. Findings cannot be interpreted as actual hospital performance, real patient outcomes or clinical evidence.
+Cedarbridge Hospital is a fictional organisation. Findings cannot be interpreted as actual hospital performance, real patient outcomes or clinical evidence.
 
 Recommendations are based on the patterns observed within the simulated dataset and should not be treated as validated interventions in a real healthcare setting.
