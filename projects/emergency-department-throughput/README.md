@@ -1,56 +1,90 @@
-# Emergency Department Throughput Analysis
+Emergency Department Throughput Analysis
 
-**Portfolio:** Gideon Odeyemi  
-**Category:** Clinical & Operations Analytics  
-**Project:** 01 of 06  
-**Tools:** Microsoft Excel, Power BI  
-**Status:** In Development
+Portfolio: Gideon Odeyemi
+Category: Clinical & Operations Analytics
+Project: 01 of 06
+Tools: Python, Microsoft Excel, Power Query, Power BI
+Status: In Development
 
-## 1. Business Problem
+1. Business Problem
 
-Emergency departments face operational challenges involving patient waiting times, congestion, patient flow and resource allocation.
+Emergency departments face operational challenges involving patient waiting times, congestion, patient flow, resource allocation and admission delays.
 
-This project investigates emergency department throughput to identify operational patterns and potential areas for improvement.
+Understanding these operational patterns can help healthcare administrators identify bottlenecks and areas where service delivery may be improved.
 
-## 2. Project Objectives
+This project investigates emergency department throughput using operational data to examine patient flow, waiting times, length of stay and other key performance indicators.
 
-- Examine emergency department visit volumes.
-- Analyse patient waiting times.
-- Investigate length of stay.
-- Identify peak demand periods.
-- Examine admission and discharge patterns.
-- Investigate patients leaving without being seen.
-- Analyse admission boarding time.
+2. Project Objectives
 
-## 3. Tools and Technologies
+The project aims to:
 
-- Microsoft Excel
-- Microsoft Power BI
-- Data analysis and visualisation
+* Examine emergency department visit volumes and demand patterns.
+* Analyse patient waiting times.
+* Investigate patient length of stay (LOS).
+* Identify peak demand periods.
+* Examine admission and discharge patterns.
+* Investigate patients leaving without being seen (LWBS).
+* Analyse admission boarding times.
+* Identify potential operational improvement opportunities.
 
-## 4. Dataset
+3. Tools and Technologies
 
-A synthetic dataset of fictional emergency department visits will be used.
+* Python (Pandas, NumPy): Synthetic dataset generation.
+* Microsoft Excel: Data inspection, analysis and KPI calculations.
+* Power Query: Data cleaning and preparation.
+* Microsoft Power BI: Dashboard development and visualisation.
+
+4. Dataset
+
+This project uses a synthetic dataset representing fictional emergency department visits at Cedarbridge General Hospital.
+
+The dataset contains simulated operational records created for educational and portfolio purposes.
 
 No real patient information is included.
 
-## 5. Analytical Approach
+5. Analytical Approach
 
-1. Data collection and inspection.
-2. Data cleaning and validation.
-3. Exploratory data analysis.
-4. KPI development.
-5. Dashboard development.
-6. Interpretation and recommendations.
+The project follows a structured analytics lifecycle:
 
-## 6. Expected Deliverables
+1. Business understanding and problem definition.
+2. Data generation and inspection.
+3. Data cleaning and validation.
+4. Exploratory data analysis.
+5. KPI development and calculation.
+6. Detailed operational analysis.
+7. Dashboard development and visualisation.
+8. Interpretation of findings and recommendations.
 
-- Cleaned dataset.
-- Excel analysis workbook.
-- Interactive Power BI dashboard.
-- Project documentation.
-- Analytical findings and recommendations.
+6. Key Performance Indicators
 
-## 7. Limitations
+The analysis focuses on operational indicators including:
 
-This project uses simulated data for educational and portfolio purposes. Findings cannot be interpreted as actual hospital performance or clinical evidence.
+* Total emergency department visits.
+* Median patient waiting time.
+* 90th percentile waiting time.
+* Median length of stay.
+* 90th percentile length of stay.
+* Patients leaving without being seen rate.
+* Admission rate.
+* Admission boarding time.
+
+7. Expected Deliverables
+
+* Synthetic emergency department dataset.
+* Cleaned and validated dataset.
+* Excel analysis workbook.
+* Power BI dashboard.
+* Project documentation.
+* Analytical findings and operational recommendations.
+
+8. Limitations
+
+This project uses simulated data for educational and portfolio purposes.
+
+Cedarbridge General Hospital is a fictional organisation. Findings cannot be interpreted as actual hospital performance, real patient outcomes or clinical evidence.
+
+Recommendations are based on the patterns observed within the simulated dataset and should not be treated as validated interventions in a real healthcare setting.
+
+My assessment
+
+This is a stronger README because it communicates both the business problem and the technical work involved.
