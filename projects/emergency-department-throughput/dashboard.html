@@ -1,32 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101b2b">
-  <meta name="description" content="Synthetic emergency department case study with dashboard, key findings and methods.">
-  <title>Emergency Department Throughput Analysis | Gideon Odeyemi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/portfolio-upgrade.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101b2b">
+<meta name="description" content="A concise clinical analytics case study with four-page Power BI dashboard, findings and source files.">
+<title>Emergency Department Throughput | Gideon Odeyemi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/portfolio-upgrade.css">
+<link rel="stylesheet" href="../../css/case-study.css">
 </head>
 <body class="case-page">
-  <header class="header"><div class="container nav-container"><a href="../../index.html" class="logo">Gideon Odeyemi<span>.</span></a><a class="back-link" style="margin:0;" href="../../index.html#projects">← All projects</a></div></header>
-  <main><section class="case-hero"><div class="container"><a class="back-link" href="../../index.html#projects">← Browse all projects</a><p class="eyebrow">CLINICAL ANALYTICS · SYNTHETIC DATA</p><h1>Emergency Department Throughput Analysis</h1><p class="lead">An end-to-end operational case study using 4,000 synthetic emergency department visits at the fictional Cedarbridge General Hospital (January–October 2026).</p><div class="case-meta"><span>Python</span><span>Excel</span><span>Power Query</span><span>Power BI</span></div></div></section><section class="case-metrics"><div class="container metrics-grid">
-<div class="metric"><strong>4,000</strong><span>Total ED visits</span></div>
-<div class="metric"><strong>50 min</strong><span>Median provider wait</span></div>
-<div class="metric"><strong>32%</strong><span>Wait target met</span></div>
-<div class="metric"><strong>5.5%</strong><span>Left without being seen</span></div>
-<div class="metric"><strong>21%</strong><span>Admission rate among seen visits</span></div>
-</div></section><section class="case-section alt"><div class="container"><h2>The business problem</h2><p>Emergency departments balance unpredictable arrivals, varying urgency and inpatient bed constraints. This fictional hospital scenario examines when patient flow slows, how waits differ across patient groups and how admission boarding affects throughput.</p></div></section><section class="case-section"><div class="container"><h2>Questions explored</h2><div class="case-grid"><div class="case-panel"><h3>Demand and flow</h3><p>Which days and time bands carry the most visits? How do arrival modes and acuity levels differ?</p></div><div class="case-panel"><h3>Waiting and walk-outs</h3><p>How often are assumed wait targets met, and where do long waits and patients leaving without being seen coincide?</p></div><div class="case-panel"><h3>Admissions and boarding</h3><p>How do admission patterns, boarding time and length of stay vary across groups?</p></div><div class="case-panel"><h3>Operational decisions</h3><p>Which findings could guide staffing discussions, fast-track options and inpatient bed planning?</p></div></div></div></section><section class="case-section alt"><div class="container"><h2>How the analysis was built</h2><p>Python (Pandas and NumPy) generated synthetic visits with controlled data-quality issues. Excel Power Query was used for cleaning and validation; Excel supported KPI calculations and exploration; Power BI Desktop provided the dashboard. The raw generator produced 4,060 rows including 60 intentional duplicates for 4,000 unique visits.</p></div></section><section class="case-section"><div class="container"><h2>Selected findings</h2><div class="case-grid"><div class="case-panel"><h3>Volume peaks in the afternoon</h3><p>Afternoon arrivals account for 36% of visits; Monday records 660 visits in this synthetic scenario.</p></div><div class="case-panel"><h3>Wait target performance</h3><p>The median provider wait is 50 minutes. Among patients seen by a provider, 32% meet the project’s assumed wait target.</p></div><div class="case-panel"><h3>Patients leaving without being seen</h3><p>218 visits (5.5%) are classified as LWBS. The afternoon LWBS rate is 6.5%, compared with 3.3% at night.</p></div><div class="case-panel"><h3>Admission boarding</h3><p>The median time from admission decision to ED departure is 224 minutes among admitted visits. The reported admission rate is measured among seen visits.</p></div></div></div></section><section class="case-section alt"><div class="container"><h2>Potential operational responses</h2><ul><li>Evaluate an afternoon fast-track workflow for lower-acuity patients.</li><li>Review admission bed coordination during afternoon and evening peaks.</li><li>Monitor waiting times and LWBS patterns together rather than treating them as independent measures.</li><li>Pilot and evaluate changes before claiming improvements.</li></ul><p class="case-note">These are discussion points generated from simulated patterns, not validated interventions for a real hospital.</p></div></section><section class="case-section alt"><div class="container"><h2>Four-page Power BI dashboard</h2><p>Explore the Overview, Patient Flow, Waits and Admissions report pages below. This is a static PDF export, not an interactive Power BI Service report.</p>
-<div class="case-actions"><a class="button button-primary" href="Cedarbridge_ED_Dashboard.pdf" target="_blank" rel="noopener noreferrer">Open dashboard PDF ↗</a><a class="button button-outline" href="https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/" target="_blank" rel="noopener noreferrer">Code, data &amp; technical documentation ↗</a></div>
-<iframe class="pdf-frame" title="Four-page Emergency Department Throughput Analysis dashboard (PDF)" loading="lazy" src="Cedarbridge_ED_Dashboard.pdf">Open the PDF using the link above.</iframe>
-<p class="case-note">On mobile browsers that do not embed PDFs reliably, use the “Open dashboard PDF” button. The exported PDF has its own original colours and does not change with the website’s light/dark theme.</p></div></section><section class="case-section"><div class="container"><h2>Data ethics and limitations</h2><p>Cedarbridge General Hospital is fictional, and all patient visits are synthetic. No real patient information or clinical outcomes are represented. Wait targets are analytical assumptions, not hospital or clinical standards. The dataset does not include staffing, bed capacity or diagnostic information; the findings are descriptive and do not establish causes.</p></div></section></main>
-  <footer class="footer"><div class="container footer-content"><a href="../../index.html" class="logo">Gideon Odeyemi<span>.</span></a><p>© <span id="year"></span> Gideon Odeyemi. Built with purpose.</p><a href="../../index.html#projects">Back to projects ↑</a></div></footer>
-  <script src="../../js/main.js" defer></script>
-</body>
-</html>
+<header class="header"><div class="container nav-container">
+<a href="../../index.html" class="logo">Gideon Odeyemi<span>.</span></a>
+<a class="back-link" href="../../index.html#projects">← All projects</a>
+</div></header>
+<main>
+<section class="case-intro"><div class="container">
+<p class="eyebrow">CLINICAL ANALYTICS · SYNTHETIC CASE STUDY</p>
+<h1>Emergency Department <span>Throughput Analysis</span></h1>
+<p class="case-lead">Where do waiting times, patient arrivals and admission delays put pressure on an emergency department?</p>
+<div class="case-tags"><span>Python</span><span>Excel / Power Query</span><span>Power BI</span><span>Jan–Oct 2026</span></div>
+<div class="case-quickstats" aria-label="Selected findings"><span><b>4,000</b> visits</span><span><b>50 min</b> median wait</span><span><b>5.5%</b> LWBS rate</span><span><b>224 min</b> median boarding</span></div>
+</div></section>
+<section class="case-preview-section" id="dashboard"><div class="container">
+<div class="case-heading-row"><div><p class="eyebrow">THE WORK</p><h2>Explore the dashboard</h2><p>Four views from the actual Power BI report. Choose a page to explore.</p></div><a class="button button-outline" href="Cedarbridge_ED_Dashboard.pdf" target="_blank" rel="noopener noreferrer">Open full PDF ↗</a></div>
+<div class="page-selector" role="group" aria-label="Choose dashboard page">
+<button class="page-tab is-active" type="button" data-pdf-page="1" aria-pressed="true">Overview</button>
+<button class="page-tab" type="button" data-pdf-page="2" aria-pressed="false">Patient Flow</button>
+<button class="page-tab" type="button" data-pdf-page="3" aria-pressed="false">Waiting Times</button>
+<button class="page-tab" type="button" data-pdf-page="4" aria-pressed="false">Admissions</button>
+</div>
+<div class="pdf-preview" id="pdfPreview" data-source="Cedarbridge_ED_Dashboard.pdf">
+<p class="pdf-loading" id="pdfStatus" role="status" aria-live="polite">Loading dashboard preview…</p>
+<canvas id="dashboardCanvas" role="img" aria-label="Emergency Department Power BI dashboard: Overview"></canvas>
+<div id="pdfFallback" class="pdf-fallback" hidden><p>The in-page preview could not load. You can still open the original four-page report.</p><a class="button button-primary" href="Cedarbridge_ED_Dashboard.pdf" target="_blank" rel="noopener noreferrer">View dashboard PDF ↗</a></div>
+</div>
+<p class="case-annotation">The report uses synthetic data and assumed wait targets. The PDF is a static export; Power BI slicers are not interactive here.</p>
+</div></section>
+<section class="case-section compact-case"><div class="container">
+<p class="eyebrow">WHAT THE DATA SHOWS</p><h2>Key findings</h2>
+<div class="insight-grid">
+<article class="insight"><span class="insight-number">36%</span><h3>Afternoon demand</h3><p>More than a third of visits occurred in the afternoon.</p></article>
+<article class="insight"><span class="insight-number">32%</span><h3>Wait target met</h3><p>About one in three patients seen met the project's assumed wait target.</p></article>
+<article class="insight"><span class="insight-number">218</span><h3>Left without being seen</h3><p>The highest LWBS rate occurred during the afternoon (6.5%).</p></article>
+</div></div></section>
+<section class="case-section compact-case alt"><div class="container">
+<div class="case-two-col">
+<div><p class="eyebrow">HOW IT WAS BUILT</p><h2>From raw data to decisions</h2><p>Python generated 4,060 synthetic rows, including 60 intentional duplicates. Excel Power Query cleaned the records, Excel supported the analysis, and Power BI presented the operational metrics.</p></div>
+<div><p class="eyebrow">POSSIBLE RESPONSES</p><h2>What could improve?</h2><p>Evaluate afternoon fast-track options, coordinate inpatient bed availability and monitor LWBS alongside waiting time. These are suggestions for investigation—not proven interventions.</p></div>
+</div></div></section>
+<section class="case-section compact-case"><div class="container">
+<p class="eyebrow">SOURCE & DOCUMENTATION</p><h2>Explore the project files</h2>
+<div class="case-actions"><a class="button button-primary" href="https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/" target="_blank" rel="noopener noreferrer">Python, Excel &amp; Power BI ↗</a><a class="button button-outline" href="Cedarbridge_ED_Dashboard.pdf" target="_blank" rel="noopener noreferrer">Download / open PDF ↗</a></div>
+<p class="case-annotation">Cedarbridge General Hospital is fictional. All patient records are synthetic, and the descriptive results are not real clinical evidence.</p>
+</div></section>
+<script type="module" src="../../js/dashboard-preview.mjs"></script>
+</main><footer class="footer"><div class="container footer-content"><a href="../../index.html" class="logo">Gideon Odeyemi<span>.</span></a><p>© <span id="year"></span> Gideon Odeyemi.</p><a href="../../index.html#projects">Back to projects ↑</a></div></footer><script src="../../js/main.js" defer></script></body></html>

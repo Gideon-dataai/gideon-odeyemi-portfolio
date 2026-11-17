@@ -1,91 +1,11 @@
-# Emergency Department Throughput Analysis
+# Project page updates
 
-**Portfolio:** Gideon Odeyemi  
-**Category:** Clinical & Operations Analytics  
-**Tools:** Python, Microsoft Excel, Power Query, Power BI  
-**Status:** Dashboard built; documentation in progress
+The Emergency Department Throughput case study is published on the portfolio website:
 
-## 1. Business Problem
+- [View the four-page dashboard and case study](dashboard.html)
+- [Open the full PDF export](Cedarbridge_ED_Dashboard.pdf)
+- [Review Python, Excel and Power BI source files](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/)
 
-Emergency departments face operational challenges involving patient waiting times, congestion, patient flow, resource allocation and admission delays.
+The dashboard uses 4,000 synthetic emergency department visits (January–October 2026) from the fictional Cedarbridge General Hospital. No real patient information is used.
 
-Understanding these operational patterns can help healthcare administrators identify bottlenecks and areas where service delivery may be improved.
-
-This project investigates emergency department throughput using operational data to examine patient flow, waiting times, length of stay and other key performance indicators.
-
-## 2. Project Objectives
-
-The project aims to:
-
-- Examine emergency department visit volumes and demand patterns.
-- Analyse patient waiting times.
-- Investigate patient length of stay (LOS).
-- Identify peak demand periods.
-- Examine admission and discharge patterns.
-- Investigate patients leaving without being seen (LWBS).
-- Analyse admission boarding times.
-- Identify potential operational improvement opportunities.
-
-## 3. Tools and Technologies
-
-- **Python (Pandas, NumPy):** Synthetic dataset generation.
-- **Microsoft Excel:** Data inspection, analysis and KPI calculations.
-- **Power Query:** Data cleaning and preparation.
-- **Microsoft Power BI:** Dashboard development and visualisation.
-
-## 4. Dataset
-
-This project uses a synthetic dataset representing fictional emergency department visits at Cedarbridge General Hospital.
-
-The dataset contains simulated operational records created for educational and portfolio purposes.
-
-No real patient information is included.
-
-## 5. Analytical Approach
-
-The project follows a structured analytics lifecycle:
-
-1. Business understanding and problem definition.
-2. Data generation and inspection.
-3. Data cleaning and validation.
-4. Exploratory data analysis.
-5. KPI development and calculation.
-6. Detailed operational analysis.
-7. Dashboard development and visualisation.
-8. Interpretation of findings and recommendations.
-
-## 6. Key Performance Indicators
-
-The analysis focuses on operational indicators including:
-
-- Total emergency department visits.
-- Median patient waiting time.
-- 90th percentile waiting time.
-- Median length of stay.
-- 90th percentile length of stay.
-- Patients leaving without being seen rate.
-- Admission rate.
-- Admission boarding time.
-
-## 7. Expected Deliverables
-
-- Synthetic emergency department dataset.
-- Cleaned and validated dataset.
-- Excel analysis workbook.
-- Power BI dashboard.
-- Project documentation.
-- Analytical findings and operational recommendations.
-
-## 8. Limitations
-
-This project uses simulated data for educational and portfolio purposes.
-
-Cedarbridge Hospital is a fictional organisation. Findings cannot be interpreted as actual hospital performance, real patient outcomes or clinical evidence.
-
-Recommendations are based on the patterns observed within the simulated dataset and should not be treated as validated interventions in a real healthcare setting.
-
-## Technical Project Files
-
-The code, synthetic dataset, Excel workbook, Power BI dashboard and detailed analytical findings are maintained in the [technical project repository](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/).
-
-[View the dashboard on the portfolio website](dashboard.html) or [open the four-page PDF](Cedarbridge_ED_Dashboard.pdf). Separate page screenshots may be added later.
+The website's dashboard preview renders pages directly from the PDF. The original report can be opened with Power BI Desktop using the linked technical repository.
