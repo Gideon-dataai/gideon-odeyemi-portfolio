@@ -4,7 +4,7 @@
 **Category:** Clinical & Operations Analytics  
 **Project:** 01 of 06  
 **Tools:** Python, Microsoft Excel, Power Query, Power BI  
-**Status:** In Development
+**Status:** Dashboard built; documentation in progress
 
 ## 1. Business Problem
 
@@ -84,3 +84,9 @@ This project uses simulated data for educational and portfolio purposes.
 Cedarbridge Hospital is a fictional organisation. Findings cannot be interpreted as actual hospital performance, real patient outcomes or clinical evidence.
 
 Recommendations are based on the patterns observed within the simulated dataset and should not be treated as validated interventions in a real healthcare setting.
+
+## Technical Project Files
+
+The code, synthetic dataset, Excel workbook, Power BI dashboard and detailed analytical findings are maintained in the [technical project repository](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/01-emergency-department-throughput/).
+
+Dashboard screenshots and a PDF export will be linked when they are uploaded.

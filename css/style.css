@@ -365,6 +365,21 @@ a {
   color: var(--emerald);
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  color: var(--navy);
+}
+
 .focus-section {
   padding: 80px 0;
   background: var(--navy);
