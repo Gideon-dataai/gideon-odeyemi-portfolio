@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101b2b">
 
   <meta name="description" content="Gideon Odeyemi — Clinical and Operations Data Analyst. Exploring healthcare and business data to support better decisions.">
 
@@ -13,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio-upgrade.css">
 </head>
 
 <body>
@@ -137,77 +141,73 @@
       </p>
     </div>
 
-    <div class="project-grid">
-
-      <article class="project-card clinical-card">
-        <span class="project-category">CLINICAL ANALYTICS</span>
-        <h3>Emergency Department Throughput</h3>
-        <p>
-          Exploring patient flow, waiting times,
-          bottlenecks and operational efficiency.
-        </p>
-        <div class="project-tools">PYTHON · EXCEL · POWER BI</div>
-        <span class="project-status">DASHBOARD BUILT · DOCUMENTATION IN PROGRESS</span>
-        <a class="project-link" href="projects/emergency-department-throughput/dashboard.html">View dashboard &amp; case study →</a>
-        <a class="project-link" href="https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/" target="_blank" rel="noopener noreferrer">View technical files &amp; findings →</a>
-      </article>
-
-      <article class="project-card clinical-card">
-        <span class="project-category">CLINICAL ANALYTICS</span>
-        <h3>FHIR API Data Pipeline</h3>
-        <p>
-          Building a healthcare data pipeline using
-          interoperable health data standards.
-        </p>
-        <div class="project-tools">SQL · PYTHON · FHIR</div>
-        <span class="project-status">PLANNED</span>
-      </article>
-
-      <article class="project-card clinical-card">
-        <span class="project-category">CLINICAL ANALYTICS</span>
-        <h3>HEDIS Quality & Risk Stratification</h3>
-        <p>
-          Investigating healthcare quality measures
-          and patient risk patterns.
-        </p>
-        <div class="project-tools">PYTHON · POWER BI</div>
-        <span class="project-status">PLANNED</span>
-      </article>
-
-      <article class="project-card clinical-card">
-        <span class="project-category">CLINICAL ANALYTICS</span>
-        <h3>Medical Billing & Revenue Cycle</h3>
-        <p>
-          Analysing billing performance, revenue
-          patterns and potential process delays.
-        </p>
-        <div class="project-tools">EXCEL · SQL</div>
-        <span class="project-status">PLANNED</span>
-      </article>
-
-      <article class="project-card business-card">
-        <span class="project-category">BUSINESS ANALYTICS</span>
-        <h3>B2B SaaS Churn & LTV Analysis</h3>
-        <p>
-          Exploring customer retention, churn
-          patterns and lifetime value.
-        </p>
-        <div class="project-tools">SQL · PYTHON</div>
-        <span class="project-status">PLANNED</span>
-      </article>
-
-      <article class="project-card business-card">
-        <span class="project-category">BUSINESS ANALYTICS</span>
-        <h3>Dynamic Inventory Supply Chain</h3>
-        <p>
-          Analysing stock movement, inventory
-          performance and supply operations.
-        </p>
-        <div class="project-tools">SQL · POWER BI</div>
-        <span class="project-status">PLANNED</span>
-      </article>
-
-    </div>
+    <div class="project-filters" role="group" aria-label="Filter projects by specialisation">
+<button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All Projects</button>
+<button type="button" class="filter-button" data-filter="clinical" aria-pressed="false">Clinical Analytics</button>
+<button type="button" class="filter-button" data-filter="operations" aria-pressed="false">Operations Analytics</button>
+</div>
+<p class="filter-feedback visually-hidden" id="filterFeedback" role="status" aria-live="polite"></p>
+<div class="project-grid" id="projectGrid">
+<a class="project-card clinical-card" data-category="clinical" href="projects/emergency-department-throughput/dashboard.html" aria-label="Explore Emergency Department Throughput">
+<div class="project-art art-ed" aria-hidden="true">
+  <div class="art-label"><span class="art-dot"></span> CEDARBRIDGE / ED OVERVIEW <span>● ● ●</span></div>
+  <div class="art-kpis"><span><b>4,000</b><small>Visits</small></span><span><b>50m</b><small>Median wait</small></span><span><b>5.5%</b><small>LWBS</small></span></div>
+  <div class="art-barplot"><i style="height:55%"></i><i style="height:48%"></i><i style="height:58%"></i><i style="height:65%"></i><i style="height:73%"></i><i style="height:68%"></i><i style="height:84%"></i><i style="height:86%"></i><i style="height:58%"></i><i style="height:79%"></i></div>
+  <div class="art-caption">PATIENT VOLUME · JAN–OCT 2026</div>
+</div>
+<div class="project-card-body">
+<span class="project-category">CLINICAL ANALYTICS</span>
+<h3>Emergency Department Throughput</h3>
+<p>Investigating patient flow, waiting times, walk-outs and admission boarding.</p>
+<div class="project-card-footer"><span class="project-tools">PYTHON · EXCEL · POWER BI</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+</div>
+</a>
+<a class="project-card clinical-card" data-category="clinical" href="projects/fhir-api-data-pipeline/index.html" aria-label="Explore FHIR API Data Pipeline">
+<div class="project-art art-fhir" aria-hidden="true"><div class="art-label">HEALTH DATA / INTEROPERABILITY</div><div class="art-pipeline"><span>FHIR<br><small>API</small></span><i>→</i><span>PYTHON<br><small>ETL</small></span><i>→</i><span>SQL<br><small>DATA</small></span></div><div class="art-code">&lt;Patient /&gt; &nbsp; &lt;Observation /&gt;</div></div>
+<div class="project-card-body">
+<span class="project-category">CLINICAL ANALYTICS</span>
+<h3>FHIR API Data Pipeline</h3>
+<p>Connecting healthcare data standards, APIs and reproducible data pipelines.</p>
+<div class="project-card-footer"><span class="project-tools">SQL · PYTHON · FHIR</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+</div>
+</a>
+<a class="project-card clinical-card" data-category="clinical" href="projects/hedis-quality-risk-stratification/index.html" aria-label="Explore HEDIS Quality & Risk Stratification">
+<div class="project-art art-hedis" aria-hidden="true"><div class="art-label">QUALITY / RISK ANALYSIS</div><div class="art-risk"><div class="risk-ring"></div><div class="risk-lines"><i></i><i></i><i></i><i></i></div></div><div class="art-caption">MEASUREMENT • STRATIFICATION • INSIGHTS</div></div>
+<div class="project-card-body">
+<span class="project-category">CLINICAL ANALYTICS</span>
+<h3>HEDIS Quality & Risk Stratification</h3>
+<p>Exploring quality measures and patterns in risk across patient populations.</p>
+<div class="project-card-footer"><span class="project-tools">PYTHON · POWER BI</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+</div>
+</a>
+<a class="project-card clinical-card" data-category="clinical" href="projects/medical-billing-revenue-cycle/index.html" aria-label="Explore Medical Billing & Revenue Cycle">
+<div class="project-art art-billing" aria-hidden="true"><div class="art-label">REVENUE CYCLE / OPERATIONS</div><div class="art-invoice"><span class="art-invoice-head">CLAIMS WORKFLOW <i>↗</i></span><div><b>Submission</b><i style="width:83%"></i></div><div><b>Processing</b><i style="width:64%"></i></div><div><b>Resolution</b><i style="width:94%"></i></div></div></div>
+<div class="project-card-body">
+<span class="project-category">CLINICAL ANALYTICS</span>
+<h3>Medical Billing & Revenue Cycle</h3>
+<p>Understanding claims, billing performance and revenue cycle processes.</p>
+<div class="project-card-footer"><span class="project-tools">EXCEL · SQL</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+</div>
+</a>
+<a class="project-card operations-card" data-category="operations" href="projects/saas-churn-ltv-analysis/index.html" aria-label="Explore B2B SaaS Churn & LTV Analysis">
+<div class="project-art art-saas" aria-hidden="true"><div class="art-label">SAAS / CUSTOMER ANALYTICS</div><div class="art-saas-chart"><svg viewBox="0 0 330 128" preserveAspectRatio="none" focusable="false" aria-hidden="true"><path class="chart-grid" d="M0 28 H330 M0 65 H330 M0 103 H330"/><path class="chart-secondary" d="M0 104 C45 106 60 86 106 96 S178 73 216 82 S275 70 330 72"/><path class="chart-primary" d="M0 94 C36 91 42 76 75 78 S133 57 162 63 S218 33 253 39 S291 19 330 21"/></svg></div><div class="art-caption">RETENTION • CHURN • LIFETIME VALUE</div></div>
+<div class="project-card-body">
+<span class="project-category">OPERATIONS ANALYTICS</span>
+<h3>B2B SaaS Churn & LTV Analysis</h3>
+<p>Examining customer retention, churn signals and customer lifetime value.</p>
+<div class="project-card-footer"><span class="project-tools">SQL · PYTHON</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+</div>
+</a>
+<a class="project-card operations-card" data-category="operations" href="projects/inventory-supply-chain/index.html" aria-label="Explore Dynamic Inventory & Supply Chain">
+<div class="project-art art-inventory" aria-hidden="true"><div class="art-label">SUPPLY CHAIN / INVENTORY</div><div class="art-stock"><div><i></i><i></i><i></i></div><div><i></i><i></i></div><div><i></i><i></i><i></i><i></i></div><div><i></i><i></i><i></i></div></div><div class="art-caption">STOCK MOVEMENT • AVAILABILITY • FLOW</div></div>
+<div class="project-card-body">
+<span class="project-category">OPERATIONS ANALYTICS</span>
+<h3>Dynamic Inventory & Supply Chain</h3>
+<p>Analysing stock movement, availability and operational supply decisions.</p>
+<div class="project-card-footer"><span class="project-tools">SQL · POWER BI</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+</div>
+</a>
+</div>
   </div>
 </section>
 
