@@ -164,3 +164,15 @@ body { background: var(--page); color: var(--text); }
   .project-card,.card-arrow,.filter-button {transition:none!important;}
   .project-card:hover,.project-card:focus-visible {transform:none;}
 }
+
+/* Dark surfaces that previously used fixed light colours or the old navy variable. */
+@media (prefers-color-scheme: dark) {
+  .contact-section { background: #102a3c; color: #f7fbff; }
+  .contact-section h2 { color: #f7fbff; }
+  .contact-section p { color: #c8dce8; }
+  .contact-section .button-light { background: #e7f3f5; color: #10232c; }
+  .navigation { background: var(--surface); }
+  .navigation a { color: var(--text); }
+  .navigation .nav-contact { color: #10232c; }
+  .menu-toggle { color: var(--text); }
+}
