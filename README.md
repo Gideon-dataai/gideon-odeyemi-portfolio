@@ -8,14 +8,14 @@ This repository contains the source code for my responsive portfolio website, bu
 
 ## Featured projects
 
-The portfolio is planned around four clinical/healthcare projects and two business/operations projects.
+A growing collection of clinical, healthcare, business and operations analytics projects. New work can be added at any time.
 
-- **Project 01 — Emergency Department Throughput Analysis:** Dashboard built; documentation in progress. [View technical project, findings and files](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/01-emergency-department-throughput/).
-- **Project 02 — FHIR API Data Pipeline:** Planned.
-- **Project 03 — HEDIS Quality & Risk Stratification:** Planned.
-- **Project 04 — Medical Billing & Revenue Cycle:** Planned.
-- **Project 05 — B2B SaaS Churn & LTV:** Planned.
-- **Project 06 — Dynamic Inventory & Supply Chain:** Planned.
+- **Emergency Department Throughput Analysis:** Dashboard built; documentation in progress. [View technical project, findings and files](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/).
+- **FHIR API Data Pipeline:** Planned.
+- **HEDIS Quality & Risk Stratification:** Planned.
+- **Medical Billing & Revenue Cycle:** Planned.
+- **B2B SaaS Churn & LTV:** Planned.
+- **Dynamic Inventory & Supply Chain:** Planned.
 
 ## Repository roles
 

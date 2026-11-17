@@ -2,7 +2,6 @@
 
 **Portfolio:** Gideon Odeyemi  
 **Category:** Clinical & Operations Analytics  
-**Project:** 01 of 06  
 **Tools:** Python, Microsoft Excel, Power Query, Power BI  
 **Status:** Dashboard built; documentation in progress
 
@@ -87,6 +86,6 @@ Recommendations are based on the patterns observed within the simulated dataset 
 
 ## Technical Project Files
 
-The code, synthetic dataset, Excel workbook, Power BI dashboard and detailed analytical findings are maintained in the [technical project repository](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/01-emergency-department-throughput/).
+The code, synthetic dataset, Excel workbook, Power BI dashboard and detailed analytical findings are maintained in the [technical project repository](https://github.com/Gideon-dataai/Clinical-Operations-Data-Analysis/tree/main/emergency-department-throughput/).
 
-Dashboard screenshots and a PDF export will be linked when they are uploaded.
+[View the dashboard on the portfolio website](dashboard.html) or [open the four-page PDF](Cedarbridge_ED_Dashboard.pdf). Separate page screenshots may be added later.
